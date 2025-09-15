@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpndhhy8vuabm"]
+
+[ext_resource type="Script" uid="uid://bu24r56untdgp" path="res://levels/game_runner.gd" id="1_h1wvf"]
+
+[node name="Game Runner" type="Node"]
+script = ExtResource("1_h1wvf")
