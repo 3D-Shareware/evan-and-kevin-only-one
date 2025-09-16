@@ -10,21 +10,21 @@ signal advanceText
 @onready var battle_text = $"Battle Text"
 @onready var move_element = $"Move Element"
 @onready var anim = $"Camera2D/Camera Animator"
+@onready var health_bars = [$"Player Health", $"Enemy Health"]
 
 const TEAM_TEXT_OFFSETS = ["[left]", "[right]", "Your", "Enemy", "[color=#ff1717]", "[color=#fff700]"]
 
-
-
 # normally empty array, but can set to test scenarios
 var teams = [
-	[IceopodCreature.new(), FeyereCreature.new()],
-	[WatchearthCreature.new(), ShriekadeeCreature.new()]
+	[AlchemouseCreature.new(), FeyereCreature.new()],
+	[RockstrichCreature.new(), ShriekadeeCreature.new()]
 ]
 
 # var all_creatures = [
 	# PeepsicleCreature.new(), FeyereCreature.new(), SuperNovaCreature.new(), QuakenCreature.new(),
 	# TimboarCreature.new(), SturglockCreature.new(), ResentanaCreature.new(), ShriekadeeCreature.new(),
-	# BrinotaurCreature.new(), WatchearthCreature.new(), GouroborosCreature.new(), IceopodCreature.new()
+	# BrinotaurCreature.new(), WatchearthCreature.new(), GouroborosCreature.new(), IceopodCreature.new(),
+	# RockstrichCreature.new(), AlchemouseCreature.new()
 # ]
 
 var busy = false # set to true when handling damage and not able to select a move
@@ -124,7 +124,7 @@ func use_move(move: BaseMove, user: int):
 				battle_text.text += "\n[color=#fff700]" + str(int(teams[1 - user][0].take_damage(0.01 * 1.5 * move.damage * teams[user][0].power))) + " damage![/color]"
 			else:
 				battle_text.text += "\n" + str(int(teams[1 - user][0].take_damage(0.01 * move.damage * teams[user][0].power))) + " damage!"
-			battle_text.text += " " + move.on_hit(teams[1 - user][0])
+			battle_text.text += " " + move.on_hit(teams[user][0], teams[1 - user][0])
 			teams[user][0].animate_move(move.move_animation)
 	update_names_and_stats()
 
@@ -132,7 +132,11 @@ func update_names_and_stats():
 	for i in 2:
 		element_displays[i].frame = teams[i][0].element_id
 		name_displays[i].text = TEAM_TEXT_OFFSETS[i] + teams[i][0].display_name
-		stat_displays[i].text = TEAM_TEXT_OFFSETS[i] + str(int(teams[i][0].health)) + "/" + str(int(teams[i][0].max_health)) + "\n" + str(int(teams[i][0].power)) + "\n" + str(int(teams[i][0].speed))
+		stat_displays[i].text = TEAM_TEXT_OFFSETS[i] + str(int(teams[i][0].speed)) + "\n" + str(int(teams[i][0].power)) + "\n" + str(int(teams[i][0].health)) + "/" + str(int(teams[i][0].max_health))
+		# stat_displays[i].text = TEAM_TEXT_OFFSETS[i] + str(int(teams[i][0].health)) + "/" + str(int(teams[i][0].max_health)) + "\n" + str(int(teams[i][0].power)) + "\n" + str(int(teams[i][0].speed))
+		health_bars[i].max_value = teams[i][0].max_health
+		health_bars[i].value = teams[i][0].health
+		health_bars[i].tint_progress = Color.from_hsv(0.35 * (health_bars[i].value / health_bars[i].max_value), 1.0, 1.0)
 
 func _input(event):
 	if event.is_action_pressed("advance_text"):

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dd88ve6pv1th4" path="res://assets/ui/battle/black_bar.png" id="2_lc8wd"]
 [ext_resource type="Texture2D" uid="uid://cfogdbnu5tr2" path="res://assets/ui/battle/duel_bar_gray.png" id="3_7s4rq"]
 [ext_resource type="Texture2D" uid="uid://ce0lyys0uqddn" path="res://assets/ui/battle/elements.png" id="3_lblmo"]
-[ext_resource type="Texture2D" uid="uid://ck12xa6d8yqkx" path="res://assets/ui/battle/stats.png" id="4_w06gw"]
+[ext_resource type="Texture2D" uid="uid://huyd8vlnpicf" path="res://assets/ui/battle/stats.png" id="4_w06gw"]
 [ext_resource type="PackedScene" uid="uid://b5odhs6kgktoi" path="res://objects/ui/health_bar.tscn" id="6_myv1i"]
 
 [sub_resource type="Animation" id="Animation_w06gw"]
@@ -40,7 +40,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_myv1i"]
 resource_name = "earthquake"
-length = 0.4
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -48,10 +48,10 @@ tracks/0/path = NodePath(".:offset")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-4, 0), Vector2(4, 0), Vector2(-4, 0), Vector2(4, 0), Vector2(0, 0)]
+"values": [Vector2(-4, 0), Vector2(4, 0), Vector2(-4, 0), Vector2(4, 0), Vector2(-4, 0), Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_myv1i"]
@@ -171,8 +171,16 @@ hframes = 4
 vframes = 2
 
 [node name="Player Health" parent="." instance=ExtResource("6_myv1i")]
+offset_left = -395.0
+offset_top = -93.0
+offset_right = -371.0
+offset_bottom = 35.0
 
 [node name="Enemy Health" parent="." instance=ExtResource("6_myv1i")]
+offset_left = 371.0
+offset_top = -93.0
+offset_right = 395.0
+offset_bottom = 35.0
 
 [node name="Battle Text" type="RichTextLabel" parent="."]
 offset_left = -397.0
