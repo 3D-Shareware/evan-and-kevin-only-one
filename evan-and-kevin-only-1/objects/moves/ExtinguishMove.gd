@@ -10,7 +10,7 @@ func _init() -> void:
 	move_animation = "Launch"
 	descr = "Instantly defeats Fire foes."
 
-func on_hit(target: BaseCreature) -> String:
+func on_hit(_user: BaseCreature, target: BaseCreature, _battle_properties: Array) -> String:
 	if target.element_id == elements["fire"]:
 		target.health = 0
 		return "[color=#fff700]Instant KO![/color]"

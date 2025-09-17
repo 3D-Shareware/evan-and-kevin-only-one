@@ -10,7 +10,7 @@ func _init() -> void:
 	move_animation = "Melee"
 	descr = "Reduces foe's Speed by 30%, doubled if foe is weak to Ice."
 
-func on_hit(target: BaseCreature) -> String:
+func on_hit(_user:BaseCreature, target: BaseCreature, _battle_properties: Array) -> String:
 	if elements["ice"] in target.weaknesses:
 		@warning_ignore("narrowing_conversion")
 		target.speed = max(target.speed * 0.4, 1)

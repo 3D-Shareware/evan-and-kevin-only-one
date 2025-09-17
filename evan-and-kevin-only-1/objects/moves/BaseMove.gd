@@ -21,12 +21,16 @@ var element_id: int
 ## Name of move.
 var move_name: String
 
-## Melee, Launch, Stomp
+## Melee, Launch, Stomp, Grow
 var move_animation: String
 
 ## Describes what move does to the player.
 var descr: String
 
+## Returns the damage the move does, excluding type advantage.
+func get_damage(user: BaseCreature, _target: BaseCreature, _battle_properties: Array) -> int:
+	return user.power * self.damage
+
 ## What the move does if it doesn't miss the foe.
-func on_hit(_target: BaseCreature) -> String:
+func on_hit(_user: BaseCreature, _target: BaseCreature, _battle_properties: Array) -> String:
 	return ""

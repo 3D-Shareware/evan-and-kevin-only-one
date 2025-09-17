@@ -10,6 +10,6 @@ func _init() -> void:
 	move_animation = "Launch"
 	descr = "Instantly defeats the foe, and clears all terrain effects on foe's side."
 
-func on_hit(target: BaseCreature) -> String:
+func on_hit(_user: BaseCreature, target: BaseCreature, _battle_properties: Array) -> String:
 	target.health = 0
 	return "[color=#fff700]Instant KO![/color]"
