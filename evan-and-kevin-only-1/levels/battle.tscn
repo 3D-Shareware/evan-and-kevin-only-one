@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://vjhohpd385mh"]
+[gd_scene load_steps=12 format=3 uid="uid://vjhohpd385mh"]
 
 [ext_resource type="Script" uid="uid://cshdiuoleusao" path="res://levels/battle.gd" id="1_bjt0b"]
 [ext_resource type="Texture2D" uid="uid://dd88ve6pv1th4" path="res://assets/ui/battle/black_bar.png" id="2_lc8wd"]
@@ -6,22 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ce0lyys0uqddn" path="res://assets/ui/battle/elements.png" id="3_lblmo"]
 [ext_resource type="Texture2D" uid="uid://huyd8vlnpicf" path="res://assets/ui/battle/stats.png" id="4_w06gw"]
 [ext_resource type="PackedScene" uid="uid://b5odhs6kgktoi" path="res://objects/ui/health_bar.tscn" id="6_myv1i"]
-
-[sub_resource type="Animation" id="Animation_w06gw"]
-resource_name = "screenshake"
-length = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:offset")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -4), Vector2(0, 4), Vector2(0, 0)]
-}
+[ext_resource type="PackedScene" uid="uid://b5y82lrddydb6" path="res://objects/ui/battle_button.tscn" id="7_x88of"]
 
 [sub_resource type="Animation" id="Animation_7s4rq"]
 length = 0.001
@@ -52,6 +37,22 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(-4, 0), Vector2(4, 0), Vector2(-4, 0), Vector2(4, 0), Vector2(-4, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_w06gw"]
+resource_name = "screenshake"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -4), Vector2(0, 4), Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_myv1i"]
@@ -107,6 +108,7 @@ metadata/_edit_use_anchors_ = true
 [node name="Player Stats" type="Sprite2D" parent="Player Element"]
 position = Vector2(0, 58)
 texture = ExtResource("4_w06gw")
+hframes = 2
 
 [node name="Stat Text" type="RichTextLabel" parent="Player Element/Player Stats"]
 anchors_preset = -1
@@ -144,6 +146,7 @@ text = "[right]Loser"
 [node name="Enemy Stats" type="Sprite2D" parent="Enemy Element"]
 position = Vector2(0, 58)
 texture = ExtResource("4_w06gw")
+hframes = 2
 
 [node name="Stat Text" type="RichTextLabel" parent="Enemy Element/Enemy Stats"]
 anchors_preset = -1
@@ -190,4 +193,53 @@ offset_bottom = 446.0
 scale = Vector2(0.125, 0.125)
 theme_override_font_sizes/normal_font_size = 128
 bbcode_enabled = true
-text = "What an epic duel."
+text = "What an epic duel.
+This move rocks."
+
+[node name="Battle Button 1" parent="." instance=ExtResource("7_x88of")]
+offset_left = -395.0
+offset_top = 120.0
+offset_right = -205.0
+offset_bottom = 160.0
+
+[node name="Battle Button 2" parent="." instance=ExtResource("7_x88of")]
+offset_left = -195.0
+offset_top = 120.0
+offset_right = -5.0
+offset_bottom = 160.0
+
+[node name="Battle Button 3" parent="." instance=ExtResource("7_x88of")]
+offset_left = 5.0
+offset_top = 120.0
+offset_right = 195.0
+offset_bottom = 160.0
+
+[node name="Battle Button 4" parent="." instance=ExtResource("7_x88of")]
+offset_left = 205.0
+offset_top = 120.0
+offset_right = 395.0
+offset_bottom = 160.0
+
+[node name="Battle Button 5" parent="." instance=ExtResource("7_x88of")]
+offset_left = -395.0
+offset_top = 164.0
+offset_right = -205.0
+offset_bottom = 204.0
+
+[node name="Battle Button 6" parent="." instance=ExtResource("7_x88of")]
+offset_left = -195.0
+offset_top = 164.0
+offset_right = -5.0
+offset_bottom = 204.0
+
+[node name="Battle Button 7" parent="." instance=ExtResource("7_x88of")]
+offset_left = 5.0
+offset_top = 164.0
+offset_right = 195.0
+offset_bottom = 204.0
+
+[node name="Battle Button 8" parent="." instance=ExtResource("7_x88of")]
+offset_left = 205.0
+offset_top = 164.0
+offset_right = 395.0
+offset_bottom = 204.0
