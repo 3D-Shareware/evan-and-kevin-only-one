@@ -7,5 +7,5 @@ func ready_creature():
 	base_health = 165
 	base_power = 55
 	base_speed = 80
-	guaranteed_moves = [TremorMove]
+	guaranteed_moves = [TremorMove, RockLobMove]
 	extra_moves = []

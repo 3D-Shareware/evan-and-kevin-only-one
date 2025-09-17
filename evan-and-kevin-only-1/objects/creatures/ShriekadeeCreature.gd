@@ -8,4 +8,4 @@ func ready_creature():
 	base_power = 115
 	base_speed = 140
 	guaranteed_moves = [BrambleBashMove]
-	extra_moves = []
+	extra_moves = [LightspeedMove]
