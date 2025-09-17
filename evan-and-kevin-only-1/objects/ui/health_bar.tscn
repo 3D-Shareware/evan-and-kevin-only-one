@@ -4,8 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://b8lkbatamhtef" path="res://assets/ui/battle/health_bar.png" id="2_1dhek"]
 
 [node name="Health Bar" type="TextureProgressBar"]
-offset_right = 128.0
-offset_bottom = 24.0
+offset_right = 24.0
+offset_bottom = 128.0
+value = 100.0
+fill_mode = 3
 texture_under = ExtResource("1_6ndaj")
 texture_progress = ExtResource("2_1dhek")
-texture_progress_offset = Vector2(3, 0)
+texture_progress_offset = Vector2(0, 3)
