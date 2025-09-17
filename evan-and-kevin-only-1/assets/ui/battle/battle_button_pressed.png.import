@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://huyd8vlnpicf"
-path="res://.godot/imported/stats.png-bffff69066aa9491e7a36bec930c7c92.ctex"
+uid="uid://dxrc856vte7au"
+path="res://.godot/imported/battle_button_pressed.png-5a602f5ccdb1e975f0b5bb1190a10760.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/battle/stats.png"
-dest_files=["res://.godot/imported/stats.png-bffff69066aa9491e7a36bec930c7c92.ctex"]
+source_file="res://assets/ui/battle/battle_button_pressed.png"
+dest_files=["res://.godot/imported/battle_button_pressed.png-5a602f5ccdb1e975f0b5bb1190a10760.ctex"]
 
 [params]
 
