@@ -16,7 +16,7 @@ var weaknesses: Array
 var display_name: String
 ## Path to the sprite asset of the creature.
 var sprite_path: Resource
-## Dash, Heavy, Bounce, Rise
+## Dash, Heavy, Bounce, Rise, Teleport
 var spawn_anim: String
 ## Description of creature in the dex.
 var descr: String
@@ -34,6 +34,8 @@ var extra_moves: Array
 # these are handled by this class!
 var max_health: int
 var health: int
+var max_armor: int # armor stats only used if they are set to something
+var armor: int
 var power: int
 var speed: int
 var moveset: Array
@@ -81,6 +83,7 @@ func take_damage(dmg: int) -> int:
 	hue_anim.play("takeDamage")
 	dmg += 1 # ensures you always take 1 damage
 	health = max(health - dmg, 0)
+	armor = max(armor - dmg, 0)
 	return dmg
 
 func animate_spawn():
@@ -96,7 +99,7 @@ func perish():
 	anim.play("perish" + str(team))
 
 func time_to_die() -> bool:
-	if alive and health <= 0:
+	if alive and health <= 0 and armor <= 0:
 		alive = false
 		perish()
 		return true # returns true if it just got killed
