@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c45ir8q7an0gn"
-path="res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"
+uid="uid://6r4266edp1w4"
+path="res://.godot/imported/ailment_button_outline.png-734f877b334f5226c7f7f0d2b4733750.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/battle/elements.png"
-dest_files=["res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"]
+source_file="res://assets/ui/battle/ailment_button_outline.png"
+dest_files=["res://.godot/imported/ailment_button_outline.png-734f877b334f5226c7f7f0d2b4733750.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c45ir8q7an0gn"
-path="res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"
+uid="uid://c5ctni2r02v5i"
+path="res://.godot/imported/big_gray_box.png-c32b59269489636c6f1d941ffb4d51b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/battle/elements.png"
-dest_files=["res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"]
+source_file="res://assets/ui/title/big_gray_box.png"
+dest_files=["res://.godot/imported/big_gray_box.png-c32b59269489636c6f1d941ffb4d51b0.ctex"]
 
 [params]
 

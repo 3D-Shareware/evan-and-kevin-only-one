@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c45ir8q7an0gn"
-path="res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"
+uid="uid://honj5oyr6aht"
+path="res://.godot/imported/explosive.png-147497e7c5303cdc4167f28690732e10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/battle/elements.png"
-dest_files=["res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"]
+source_file="res://assets/talismans/explosive.png"
+dest_files=["res://.godot/imported/explosive.png-147497e7c5303cdc4167f28690732e10.ctex"]
 
 [params]
 

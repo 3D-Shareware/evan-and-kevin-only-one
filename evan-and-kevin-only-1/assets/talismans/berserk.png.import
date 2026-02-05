@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c45ir8q7an0gn"
-path="res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"
+uid="uid://c727fhqkhhax2"
+path="res://.godot/imported/berserk.png-d6be278c83ec9092dd645650f3911de1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/battle/elements.png"
-dest_files=["res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"]
+source_file="res://assets/talismans/berserk.png"
+dest_files=["res://.godot/imported/berserk.png-d6be278c83ec9092dd645650f3911de1.ctex"]
 
 [params]
 

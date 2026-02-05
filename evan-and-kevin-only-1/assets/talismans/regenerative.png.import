@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c45ir8q7an0gn"
-path="res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"
+uid="uid://c521x7e60ng4l"
+path="res://.godot/imported/regenerative.png-a7ec77a555811edab2f837e12b26d9f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/battle/elements.png"
-dest_files=["res://.godot/imported/elements.png-18ee5aebf10fb5943e4e2343f4b56eec.ctex"]
+source_file="res://assets/talismans/regenerative.png"
+dest_files=["res://.godot/imported/regenerative.png-a7ec77a555811edab2f837e12b26d9f9.ctex"]
 
 [params]
 
