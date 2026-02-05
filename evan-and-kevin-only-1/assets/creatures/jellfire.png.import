@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://qohawk83kt7p"
+path="res://.godot/imported/jellfire.png-148689e909786e5a2d82bbffccba0c3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/jellfire.png"
+dest_files=["res://.godot/imported/jellfire.png-148689e909786e5a2d82bbffccba0c3c.ctex"]
 
 [params]
 

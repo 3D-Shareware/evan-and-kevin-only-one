@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://koxa3yb54y88"
+path="res://.godot/imported/flamengo_power.png-4deae855542f6138ab24ee4f8e09fed8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/flamengo_power.png"
+dest_files=["res://.godot/imported/flamengo_power.png-4deae855542f6138ab24ee4f8e09fed8.ctex"]
 
 [params]
 

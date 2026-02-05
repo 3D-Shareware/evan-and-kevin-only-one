@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://blek0l6kc3jyw"
+path="res://.godot/imported/shrikadee.png-ae1c618476155c93f6d03e76d8cdf782.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/shrikadee.png"
+dest_files=["res://.godot/imported/shrikadee.png-ae1c618476155c93f6d03e76d8cdf782.ctex"]
 
 [params]
 

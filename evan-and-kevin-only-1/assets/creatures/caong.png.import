@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://cxs1nk7ao836g"
+path="res://.godot/imported/caong.png-c37d058f43a28f6cd5d4a766b0caedb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/caong.png"
+dest_files=["res://.godot/imported/caong.png-c37d058f43a28f6cd5d4a766b0caedb5.ctex"]
 
 [params]
 

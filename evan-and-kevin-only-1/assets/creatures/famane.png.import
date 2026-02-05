@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://cqggin5a3dsev"
+path="res://.godot/imported/famane.png-6df4cf5eadd12c86a314bda7e2ad6463.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/famane.png"
+dest_files=["res://.godot/imported/famane.png-6df4cf5eadd12c86a314bda7e2ad6463.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://b0xm44f1pb0vg"
+path="res://.godot/imported/the_only_one.png-872261535149b33c8f1494b90e0e49e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/the_only_one.png"
+dest_files=["res://.godot/imported/the_only_one.png-872261535149b33c8f1494b90e0e49e6.ctex"]
 
 [params]
 

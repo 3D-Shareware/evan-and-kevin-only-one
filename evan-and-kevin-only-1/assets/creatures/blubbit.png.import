@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://ts3ny6p1u1qf"
+path="res://.godot/imported/blubbit.png-2554689e068f5db0d439c76e349a95ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/blubbit.png"
+dest_files=["res://.godot/imported/blubbit.png-2554689e068f5db0d439c76e349a95ff.ctex"]
 
 [params]
 

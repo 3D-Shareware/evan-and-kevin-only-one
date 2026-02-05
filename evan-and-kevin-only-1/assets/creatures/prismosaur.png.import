@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://d00y02k1jrtvn"
+path="res://.godot/imported/prismosaur.png-bd4a1639688a0882c1592d1feab80db5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/prismosaur.png"
+dest_files=["res://.godot/imported/prismosaur.png-bd4a1639688a0882c1592d1feab80db5.ctex"]
 
 [params]
 

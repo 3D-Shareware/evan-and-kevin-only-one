@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qhis4r3vfvpi"
-path="res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"
+uid="uid://bhmprw2f0lnk"
+path="res://.godot/imported/gardean.png-1a961359aafbab0bd83a59bfd5854e5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/missing_sprite.png"
-dest_files=["res://.godot/imported/missing_sprite.png-82fa15accc244e4816a2ee3fdf4edccf.ctex"]
+source_file="res://assets/creatures/gardean.png"
+dest_files=["res://.godot/imported/gardean.png-1a961359aafbab0bd83a59bfd5854e5f.ctex"]
 
 [params]
 
