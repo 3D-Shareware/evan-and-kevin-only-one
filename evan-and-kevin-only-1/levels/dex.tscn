@@ -1,16 +1,15 @@
-[gd_scene load_steps=23 format=3 uid="uid://vjhohpd385mh"]
+[gd_scene load_steps=22 format=3 uid="uid://dlu0pbcrglii4"]
 
-[ext_resource type="Script" uid="uid://cshdiuoleusao" path="res://levels/battle.gd" id="1_bjt0b"]
-[ext_resource type="Texture2D" uid="uid://dd88ve6pv1th4" path="res://assets/ui/battle/black_bar.png" id="2_lc8wd"]
-[ext_resource type="Texture2D" uid="uid://c5ctni2r02v5i" path="res://assets/ui/title/big_gray_box.png" id="3_adkdf"]
-[ext_resource type="Texture2D" uid="uid://c45ir8q7an0gn" path="res://assets/ui/battle/elements.png" id="3_lblmo"]
-[ext_resource type="Script" uid="uid://dcun3gkeuqhf1" path="res://objects/ui/element_display.gd" id="5_s7c77"]
-[ext_resource type="PackedScene" uid="uid://b5odhs6kgktoi" path="res://objects/ui/health_bar.tscn" id="6_myv1i"]
-[ext_resource type="Texture2D" uid="uid://dlprpi4kbf44w" path="res://assets/ui/battle/element_button_background.png" id="6_ogpwl"]
-[ext_resource type="Texture2D" uid="uid://c01ck0v7cvmqo" path="res://assets/ui/battle/element_button_hovered.png" id="7_adkdf"]
-[ext_resource type="PackedScene" uid="uid://b5y82lrddydb6" path="res://objects/ui/battle_button.tscn" id="7_x88of"]
-[ext_resource type="PackedScene" uid="uid://yqnah66iilol" path="res://objects/ui/stat.tscn" id="9_ysxmg"]
-[ext_resource type="PackedScene" uid="uid://crfcyetis1i6d" path="res://objects/ui/status_button.tscn" id="11_adkdf"]
+[ext_resource type="Script" uid="uid://bklsbo5o5qtsj" path="res://levels/dex.gd" id="1_lmus3"]
+[ext_resource type="Texture2D" uid="uid://c5ctni2r02v5i" path="res://assets/ui/title/big_gray_box.png" id="2_tks2a"]
+[ext_resource type="Texture2D" uid="uid://dd88ve6pv1th4" path="res://assets/ui/battle/black_bar.png" id="3_oc2v5"]
+[ext_resource type="Texture2D" uid="uid://c45ir8q7an0gn" path="res://assets/ui/battle/elements.png" id="4_phuxf"]
+[ext_resource type="Script" uid="uid://dcun3gkeuqhf1" path="res://objects/ui/element_display.gd" id="5_ewgdv"]
+[ext_resource type="PackedScene" uid="uid://yqnah66iilol" path="res://objects/ui/stat.tscn" id="6_cuvef"]
+[ext_resource type="Texture2D" uid="uid://dlprpi4kbf44w" path="res://assets/ui/battle/element_button_background.png" id="7_8kuxi"]
+[ext_resource type="Texture2D" uid="uid://c01ck0v7cvmqo" path="res://assets/ui/battle/element_button_hovered.png" id="8_bmdls"]
+[ext_resource type="PackedScene" uid="uid://b5odhs6kgktoi" path="res://objects/ui/health_bar.tscn" id="9_3rsnt"]
+[ext_resource type="PackedScene" uid="uid://b5y82lrddydb6" path="res://objects/ui/battle_button.tscn" id="10_tvv2u"]
 
 [sub_resource type="Animation" id="Animation_7s4rq"]
 length = 0.001
@@ -153,7 +152,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Enemy Element:modulate")
+tracks/3/path = NodePath("Battle Text:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -165,7 +164,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Battle Text:modulate")
+tracks/4/path = NodePath("Move Element:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -177,22 +176,10 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Move Element:modulate")
+tracks/5/path = NodePath("Advance Text:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Advance Text:modulate")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -259,7 +246,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Enemy Element:modulate")
+tracks/1/path = NodePath("Battle Text:modulate")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -271,8 +258,8 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Battle Text:modulate")
-tracks/2/interp = 2
+tracks/2/path = NodePath("Move Element:modulate")
+tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
@@ -283,19 +270,19 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Move Element:modulate")
+tracks/3/path = NodePath("Top Box:offset")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 1)]
+"values": [Vector2(0, 0)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Top Box:offset")
+tracks/4/path = NodePath("Bottom Box:offset")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -307,22 +294,10 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Bottom Box:offset")
+tracks/5/path = NodePath("Advance Text:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Advance Text:modulate")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -347,7 +322,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Enemy Element:modulate")
+tracks/1/path = NodePath("Battle Text:modulate")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -359,8 +334,8 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Battle Text:modulate")
-tracks/2/interp = 2
+tracks/2/path = NodePath("Move Element:modulate")
+tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 0.3),
@@ -371,19 +346,19 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Move Element:modulate")
+tracks/3/path = NodePath("Top Box:offset")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+"values": [Vector2(0, 0)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Top Box:offset")
+tracks/4/path = NodePath("Bottom Box:offset")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -392,25 +367,13 @@ tracks/4/keys = {
 "update": 0,
 "values": [Vector2(0, 0)]
 }
-tracks/5/type = "value"
+tracks/5/type = "method"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("Bottom Box:offset")
+tracks/5/path = NodePath(".")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/6/type = "method"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath(".")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
 "times": PackedFloat32Array(0.9),
 "transitions": PackedFloat32Array(1),
 "values": [{
@@ -418,13 +381,13 @@ tracks/6/keys = {
 "method": &"done_with_first_summon"
 }]
 }
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("Advance Text:modulate")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Advance Text:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
 "times": PackedFloat32Array(0.6, 0.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
@@ -439,8 +402,8 @@ _data = {
 &"fade_in_text": SubResource("Animation_02rvr")
 }
 
-[node name="Battle" type="Node2D"]
-script = ExtResource("1_bjt0b")
+[node name="Dex" type="Node2D"]
+script = ExtResource("1_lmus3")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 15)
@@ -454,47 +417,47 @@ libraries = {
 [node name="Top Box" type="Sprite2D" parent="."]
 z_index = -4
 position = Vector2(0, -318)
-texture = ExtResource("2_lc8wd")
+texture = ExtResource("3_oc2v5")
 offset = Vector2(-900, 0)
 
 [node name="Middle Box" type="Sprite2D" parent="."]
 z_index = -5
 position = Vector2(0, -52)
-texture = ExtResource("3_adkdf")
+texture = ExtResource("2_tks2a")
 
 [node name="Bottom Box" type="Sprite2D" parent="."]
 z_index = -4
 position = Vector2(0, 213)
-texture = ExtResource("2_lc8wd")
+texture = ExtResource("3_oc2v5")
 offset = Vector2(900, 0)
 
 [node name="Bottomest Box" type="Sprite2D" parent="."]
 z_index = -4
 position = Vector2(0, 269)
-texture = ExtResource("2_lc8wd")
+texture = ExtResource("3_oc2v5")
 
 [node name="Player Element" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(-383, -188)
-texture = ExtResource("3_lblmo")
+texture = ExtResource("4_phuxf")
 hframes = 3
 vframes = 3
-script = ExtResource("5_s7c77")
+script = ExtResource("5_ewgdv")
 
-[node name="Power" parent="Player Element" instance=ExtResource("9_ysxmg")]
+[node name="Power" parent="Player Element" instance=ExtResource("6_cuvef")]
 offset_left = -13.0
 offset_top = 21.0
 offset_right = 11.0
 offset_bottom = 45.0
 
-[node name="Speed" parent="Player Element" instance=ExtResource("9_ysxmg")]
+[node name="Speed" parent="Player Element" instance=ExtResource("6_cuvef")]
 offset_left = -13.0
 offset_top = 45.0
 offset_right = 11.0
 offset_bottom = 69.0
 id = 1
 
-[node name="Health" parent="Player Element" instance=ExtResource("9_ysxmg")]
+[node name="Health" parent="Player Element" instance=ExtResource("6_cuvef")]
 offset_left = -13.0
 offset_top = 69.0
 offset_right = 11.0
@@ -506,9 +469,9 @@ offset_left = -16.0
 offset_top = -16.0
 offset_right = 16.0
 offset_bottom = 16.0
-texture_normal = ExtResource("6_ogpwl")
-texture_pressed = ExtResource("7_adkdf")
-texture_hover = ExtResource("7_adkdf")
+texture_normal = ExtResource("7_8kuxi")
+texture_pressed = ExtResource("8_bmdls")
+texture_hover = ExtResource("8_bmdls")
 
 [node name="Player Creature Text" type="RichTextLabel" parent="Player Element"]
 offset_left = 20.0
@@ -540,80 +503,7 @@ text = "[left]100
 scroll_active = false
 metadata/_edit_use_anchors_ = true
 
-[node name="Player Health" parent="Player Element" instance=ExtResource("6_myv1i")]
-offset_left = -12.0
-offset_top = 95.0
-offset_right = 12.0
-offset_bottom = 223.0
-
-[node name="Enemy Element" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0)
-position = Vector2(383, -188)
-texture = ExtResource("3_lblmo")
-hframes = 3
-vframes = 3
-script = ExtResource("5_s7c77")
-
-[node name="Power" parent="Enemy Element" instance=ExtResource("9_ysxmg")]
-offset_left = -12.0
-offset_top = 21.0
-offset_right = 12.0
-offset_bottom = 45.0
-
-[node name="Speed" parent="Enemy Element" instance=ExtResource("9_ysxmg")]
-offset_left = -12.0
-offset_top = 45.0
-offset_right = 12.0
-offset_bottom = 69.0
-id = 1
-
-[node name="Health" parent="Enemy Element" instance=ExtResource("9_ysxmg")]
-offset_left = -12.0
-offset_top = 69.0
-offset_right = 12.0
-offset_bottom = 93.0
-id = 3
-
-[node name="Element Button" type="TextureButton" parent="Enemy Element"]
-offset_left = -16.0
-offset_top = -16.0
-offset_right = 16.0
-offset_bottom = 16.0
-texture_normal = ExtResource("6_ogpwl")
-texture_pressed = ExtResource("7_adkdf")
-texture_hover = ExtResource("7_adkdf")
-
-[node name="Enemy Creature Text" type="RichTextLabel" parent="Enemy Element"]
-offset_left = -412.0
-offset_top = -11.0
-offset_right = 2732.0
-offset_bottom = 189.0
-scale = Vector2(0.125, 0.125)
-theme_override_font_sizes/normal_font_size = 128
-bbcode_enabled = true
-text = "[right]Enemy"
-
-[node name="Stat Text" type="RichTextLabel" parent="Enemy Element"]
-anchors_preset = -1
-anchor_left = -31.5834
-anchor_right = 1.01832
-anchor_bottom = 11.165
-offset_left = 569.67
-offset_top = 22.0
-offset_right = 2931.41
-offset_bottom = 320.72
-scale = Vector2(0.125, 0.125)
-mouse_filter = 2
-theme_override_constants/line_separation = 20
-theme_override_font_sizes/normal_font_size = 128
-bbcode_enabled = true
-text = "[right]100
-100
-100"
-scroll_active = false
-metadata/_edit_use_anchors_ = true
-
-[node name="Enemy Health" parent="Enemy Element" instance=ExtResource("6_myv1i")]
+[node name="Player Health" parent="Player Element" instance=ExtResource("9_3rsnt")]
 offset_left = -12.0
 offset_top = 95.0
 offset_right = 12.0
@@ -624,7 +514,7 @@ visible = false
 modulate = Color(1, 1, 1, 0)
 z_index = 1
 position = Vector2(-383, 83)
-texture = ExtResource("3_lblmo")
+texture = ExtResource("4_phuxf")
 hframes = 3
 vframes = 3
 
@@ -633,7 +523,7 @@ modulate = Color(1, 1, 1, 0)
 offset_left = -397.0
 offset_top = 70.0
 offset_right = 5939.0
-offset_bottom = 446.0
+offset_bottom = 822.0
 scale = Vector2(0.125, 0.125)
 theme_override_font_sizes/normal_font_size = 128
 theme_override_font_sizes/bold_font_size = 128
@@ -641,62 +531,45 @@ bbcode_enabled = true
 text = "What an epic duel.
 This move rocks."
 
-[node name="Battle Button 1" parent="." instance=ExtResource("7_x88of")]
-offset_left = -395.0
-offset_top = 120.0
-offset_right = -205.0
-offset_bottom = 160.0
-
-[node name="Battle Button 2" parent="." instance=ExtResource("7_x88of")]
-offset_left = -195.0
-offset_top = 120.0
-offset_right = -5.0
-offset_bottom = 160.0
-
-[node name="Battle Button 3" parent="." instance=ExtResource("7_x88of")]
-offset_left = 5.0
-offset_top = 120.0
-offset_right = 195.0
-offset_bottom = 160.0
-
-[node name="Battle Button 4" parent="." instance=ExtResource("7_x88of")]
-offset_left = 205.0
-offset_top = 120.0
-offset_right = 395.0
-offset_bottom = 160.0
-
-[node name="Battle Button 5" parent="." instance=ExtResource("7_x88of")]
+[node name="Battle Button 1" parent="." instance=ExtResource("10_tvv2u")]
 offset_left = -395.0
 offset_top = 164.0
 offset_right = -205.0
 offset_bottom = 204.0
 
-[node name="Battle Button 6" parent="." instance=ExtResource("7_x88of")]
+[node name="Battle Button 2" parent="." instance=ExtResource("10_tvv2u")]
 offset_left = -195.0
 offset_top = 164.0
 offset_right = -5.0
 offset_bottom = 204.0
 
-[node name="Battle Button 7" parent="." instance=ExtResource("7_x88of")]
+[node name="Battle Button 3" parent="." instance=ExtResource("10_tvv2u")]
 offset_left = 5.0
 offset_top = 164.0
 offset_right = 195.0
 offset_bottom = 204.0
 
-[node name="Battle Button 8" parent="." instance=ExtResource("7_x88of")]
+[node name="Battle Button 4" parent="." instance=ExtResource("10_tvv2u")]
 offset_left = 205.0
 offset_top = 164.0
 offset_right = 395.0
 offset_bottom = 204.0
 
-[node name="Page Button" parent="." instance=ExtResource("7_x88of")]
+[node name="Page Button" parent="." instance=ExtResource("10_tvv2u")]
 offset_left = -95.0
 offset_top = 208.0
 offset_right = 95.0
 offset_bottom = 248.0
 page_button = true
 
-[node name="Advance Text" parent="." instance=ExtResource("7_x88of")]
+[node name="Back to Title" parent="." instance=ExtResource("10_tvv2u")]
+offset_left = 205.0
+offset_top = 208.0
+offset_right = 395.0
+offset_bottom = 248.0
+advance_text_button = true
+
+[node name="Advance Text" parent="." instance=ExtResource("10_tvv2u")]
 visible = false
 modulate = Color(1, 1, 1, 0)
 offset_left = -95.0
@@ -705,184 +578,6 @@ offset_right = 95.0
 offset_bottom = 248.0
 advance_text_button = true
 
-[node name="Status Button 1" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-391, -213)
-
-[node name="Status Button 2" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-375, -213)
-id = 1
-
-[node name="Status Button 3" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-359, -213)
-id = 2
-
-[node name="Status Button 4" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-343, -213)
-id = 3
-
-[node name="Status Button 5" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-327, -213)
-id = 4
-
-[node name="Status Button 6" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-311, -213)
-id = 5
-
-[node name="Status Button 7" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-295, -213)
-id = 6
-
-[node name="Status Button 8" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-279, -213)
-id = 7
-
-[node name="Status Button 9" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-263, -213)
-id = 8
-
-[node name="Status Button 10" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-247, -213)
-id = 9
-
-[node name="Status Button 11" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-231, -213)
-id = 10
-
-[node name="Status Button 12" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-215, -213)
-id = 11
-
-[node name="Status Button 13" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-199, -213)
-id = 12
-
-[node name="Status Button 14" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-183, -213)
-id = 13
-
-[node name="Status Button 15" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-167, -213)
-id = 14
-
-[node name="Status Button 16" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-151, -213)
-id = 15
-
-[node name="Status Button 17" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-135, -213)
-id = 16
-
-[node name="Status Button 18" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-119, -213)
-id = 17
-
-[node name="Status Button 19" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-103, -213)
-id = 18
-
-[node name="Status Button 20" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(-87, -213)
-id = 19
-
-[node name="Status Button 21" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(391, -213)
-team = 1
-
-[node name="Status Button 22" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(375, -213)
-team = 1
-id = 1
-
-[node name="Status Button 23" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(359, -213)
-team = 1
-id = 2
-
-[node name="Status Button 24" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(343, -213)
-team = 1
-id = 3
-
-[node name="Status Button 25" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(327, -213)
-team = 1
-id = 4
-
-[node name="Status Button 26" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(311, -213)
-team = 1
-id = 5
-
-[node name="Status Button 27" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(295, -213)
-team = 1
-id = 6
-
-[node name="Status Button 28" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(279, -213)
-team = 1
-id = 7
-
-[node name="Status Button 29" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(263, -213)
-team = 1
-id = 8
-
-[node name="Status Button 30" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(247, -213)
-team = 1
-id = 9
-
-[node name="Status Button 31" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(231, -213)
-team = 1
-id = 10
-
-[node name="Status Button 32" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(215, -213)
-team = 1
-id = 11
-
-[node name="Status Button 33" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(199, -213)
-team = 1
-id = 12
-
-[node name="Status Button 34" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(183, -213)
-team = 1
-id = 13
-
-[node name="Status Button 35" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(167, -213)
-team = 1
-id = 14
-
-[node name="Status Button 36" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(151, -213)
-team = 1
-id = 15
-
-[node name="Status Button 37" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(135, -213)
-team = 1
-id = 16
-
-[node name="Status Button 38" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(119, -213)
-team = 1
-id = 17
-
-[node name="Status Button 39" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(103, -213)
-team = 1
-id = 18
-
-[node name="Status Button 40" parent="." instance=ExtResource("11_adkdf")]
-position = Vector2(87, -213)
-team = 1
-id = 19
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_02rvr")
@@ -890,5 +585,3 @@ libraries = {
 
 [connection signal="mouse_entered" from="Player Element/Element Button" to="Player Element" method="_on_element_button_mouse_entered"]
 [connection signal="mouse_exited" from="Player Element/Element Button" to="Player Element" method="_on_element_button_mouse_exited"]
-[connection signal="mouse_entered" from="Enemy Element/Element Button" to="Enemy Element" method="_on_element_button_mouse_entered"]
-[connection signal="mouse_exited" from="Enemy Element/Element Button" to="Enemy Element" method="_on_element_button_mouse_exited"]

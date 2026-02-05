@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtaekjl086fku"]
+
+[ext_resource type="Texture2D" uid="uid://c5ctni2r02v5i" path="res://assets/ui/title/big_gray_box.png" id="1_8o7kg"]
+[ext_resource type="Script" uid="uid://ynnlfg0tf6ey" path="res://levels/intro.gd" id="1_q3mgg"]
+
+[node name="Intro" type="Node2D"]
+script = ExtResource("1_q3mgg")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 15)
+zoom = Vector2(2, 2)
+
+[node name="Middle Box" type="Sprite2D" parent="."]
+z_index = -2
+texture = ExtResource("1_8o7kg")

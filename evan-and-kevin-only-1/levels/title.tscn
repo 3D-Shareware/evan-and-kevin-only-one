@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=3 uid="uid://c0ayc8liyw3tk"]
+
+[ext_resource type="Texture2D" uid="uid://c5ctni2r02v5i" path="res://assets/ui/title/big_gray_box.png" id="1_0byv1"]
+[ext_resource type="Script" uid="uid://gaf1my1rlj5m" path="res://levels/title.gd" id="1_k86xs"]
+[ext_resource type="Texture2D" uid="uid://dd88ve6pv1th4" path="res://assets/ui/battle/black_bar.png" id="2_k86xs"]
+[ext_resource type="PackedScene" uid="uid://b5y82lrddydb6" path="res://objects/ui/battle_button.tscn" id="4_525av"]
+[ext_resource type="Texture2D" uid="uid://kaky3k6bwup5" path="res://assets/the_only_one/final.png" id="5_k5sll"]
+[ext_resource type="Texture2D" uid="uid://uaiiby8hlvj1" path="res://assets/creatures/paladog.png" id="6_wdato"]
+[ext_resource type="Texture2D" uid="uid://d4gaa2vcnpsg" path="res://assets/creatures/sturglock.png" id="7_kevmy"]
+[ext_resource type="Texture2D" uid="uid://bhmprw2f0lnk" path="res://assets/creatures/gardean.png" id="8_7gau0"]
+[ext_resource type="Texture2D" uid="uid://dndy87bxnbgus" path="res://assets/creatures/bambold.png" id="8_7tqo7"]
+
+[node name="Title" type="Node2D"]
+script = ExtResource("1_k86xs")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 15)
+zoom = Vector2(2, 2)
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -20
+texture = ExtResource("1_0byv1")
+
+[node name="Bottomest Box" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(0, 269)
+texture = ExtResource("2_k86xs")
+
+[node name="Play Button" parent="." instance=ExtResource("4_525av")]
+offset_left = -295.0
+offset_top = 128.0
+offset_right = -105.0
+offset_bottom = 168.0
+
+[node name="Dex Button" parent="." instance=ExtResource("4_525av")]
+offset_left = -95.0
+offset_top = 128.0
+offset_right = 95.0
+offset_bottom = 168.0
+
+[node name="Fullscreen Button" parent="." instance=ExtResource("4_525av")]
+offset_left = 105.0
+offset_top = 128.0
+offset_right = 295.0
+offset_bottom = 168.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -273.0
+offset_top = -168.0
+offset_right = 1914.0
+offset_bottom = 38.0
+scale = Vector2(0.25, 0.25)
+theme_override_constants/outline_size = 48
+theme_override_font_sizes/normal_font_size = 128
+bbcode_enabled = true
+text = "[center]Reign of[/center]"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = -360.0
+offset_top = -125.0
+offset_right = 1827.0
+offset_bottom = 132.0
+scale = Vector2(0.33, 0.33)
+theme_override_constants/outline_size = 32
+theme_override_font_sizes/normal_font_size = 128
+bbcode_enabled = true
+text = "[center]THE ONLY ONE[/center]"
+
+[node name="The Only One" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(256, 40)
+texture = ExtResource("5_k5sll")
+flip_h = true
+
+[node name="Fighter 1" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(-336, 56)
+texture = ExtResource("6_wdato")
+
+[node name="Fighter 2" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(-224, 56)
+texture = ExtResource("7_kevmy")
+
+[node name="Fighter 3" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(-120, 56)
+texture = ExtResource("8_7tqo7")
+
+[node name="Gardean" type="Sprite2D" parent="."]
+visible = false
+z_index = -6
+position = Vector2(288, 56)
+texture = ExtResource("8_7gau0")
+flip_h = true
