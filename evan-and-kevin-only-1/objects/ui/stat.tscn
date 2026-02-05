@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://yqnah66iilol"]
+
+[ext_resource type="Texture2D" uid="uid://caa0dgqc3utwl" path="res://assets/ui/battle/stat_power.png" id="1_0us88"]
+[ext_resource type="Texture2D" uid="uid://dpqll0aa58yxv" path="res://assets/ui/battle/stat_power_hovered.png" id="2_8c8m6"]
+[ext_resource type="Script" uid="uid://dqkb6p8du23yf" path="res://objects/ui/stat.gd" id="3_8c8m6"]
+
+[node name="Stat" type="TextureButton"]
+offset_right = 23.0
+offset_bottom = 24.0
+texture_normal = ExtResource("1_0us88")
+texture_pressed = ExtResource("2_8c8m6")
+texture_hover = ExtResource("2_8c8m6")
+script = ExtResource("3_8c8m6")
+
+[connection signal="mouse_entered" from="." to="." method="_on_texture_button_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_texture_button_mouse_exited"]

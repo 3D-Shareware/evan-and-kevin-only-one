@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5y82lrddydb6"]
+[gd_scene load_steps=7 format=3 uid="uid://b5y82lrddydb6"]
 
 [ext_resource type="Texture2D" uid="uid://d2ht5ao88b1gh" path="res://assets/ui/battle/battle_button.png" id="1_5t7vb"]
 [ext_resource type="Texture2D" uid="uid://dxrc856vte7au" path="res://assets/ui/battle/battle_button_pressed.png" id="2_w8u0q"]
 [ext_resource type="Texture2D" uid="uid://s0nl8vrc1jhq" path="res://assets/ui/battle/battle_button_hovered.png" id="3_n6q85"]
 [ext_resource type="Script" uid="uid://bo3lum1pvsbi2" path="res://objects/ui/battle_button.gd" id="4_n4fue"]
 [ext_resource type="Texture2D" uid="uid://ce0lyys0uqddn" path="res://assets/ui/battle/elements.png" id="4_n6q85"]
+[ext_resource type="Texture2D" uid="uid://honj5oyr6aht" path="res://assets/talismans/explosive.png" id="6_xs8ys"]
 
 [node name="Battle Button" type="TextureButton"]
 offset_right = 180.0
@@ -18,14 +19,20 @@ script = ExtResource("4_n4fue")
 z_index = 1
 position = Vector2(20, 20)
 texture = ExtResource("4_n6q85")
-hframes = 4
-vframes = 2
+hframes = 3
+vframes = 3
+
+[node name="Talisman" type="Sprite2D" parent="."]
+modulate = Color(0.7075, 0.55, 1, 1)
+z_index = 1
+position = Vector2(20, 20)
+texture = ExtResource("6_xs8ys")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 37.0
+offset_left = 5.0
 offset_top = 8.0
-offset_right = 1269.0
+offset_right = 1477.0
 offset_bottom = 208.0
 scale = Vector2(0.125, 0.125)
 mouse_filter = 2
